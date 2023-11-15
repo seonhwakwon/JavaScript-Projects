@@ -33,6 +33,11 @@ function negation_Operator() {
   document.getElementById("Math_7").innerHTML = -x
 }//search id= Math_4 and when call the function return -10
 
+window.alert(Math.random());
+// random between 0 and 1
+window.alert(Math.random() * 100);
+// random between  0 and 100 
+
 var y= 5;
 y++;
 document.write('y++ : ' + y + '<br>');
@@ -43,9 +48,3 @@ z--;
 document.write('z-- : ' + z + '<br>');
 //z: decresing 1
 
-var a = Math.random();
-document.write('random between 0 and 1: ' + a +'<br>' )
-// random between 0 and 1
-var b =Math.random() * 100;
-document.write('random between 0 and 100: ' + b)
-// random between  0 and 100

@@ -48,7 +48,7 @@ div {
   width: 180px;
   height: 220px;
   float: left;
-  background-color: yellow;
+  background-color: palevioletred;
   padding-left:10px;
 }
 
@@ -60,18 +60,25 @@ div {
   padding-left:10px;
 }
 
+ 
 #showText {
+  overflow: scroll;
+  scrollbar-color: red orange;
+  scrollbar-width:thin;
   width: 190px;
-  height: 190px;
+  height: 200px;
   margin: 0px auto;
   float: left;
-  background-color: blue;
+  background-color: mediumslateblue;
   margin-top: 10px;
   padding-left: 10px;
  
 }
 #totalPrice {
-  background-color: blue;
+  width: 180px;
+  height:200px;
+  background-color:mediumslateblue;
+  padding-left: 20px;
   margin-top: 10px;
   float:left;
 }

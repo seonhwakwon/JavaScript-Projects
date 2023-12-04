@@ -1,15 +1,88 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-<head>
-  <title>Light box</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="JS/One_Page_Website.js" ></script>
-  <link rel="stylesheet" type="text/css" href="CSS/One_Page_Website.css"/>
-  
-</head>
-<body>
-  <div class="row">
+=	<!--title-->
+	<head>
+		<meta charset="utf-8">
+		<title>The Mug's shop</title>
+		<link rel="stylesheet" type="text/css" href="./css/one_page_website.css">	
+		<script src="JS/one_page_website.js" ></script>
+		<nav>
+	</head>
+	<!--End title-->	
+	<!--Start HOME-->
+	<body>
+	<!-- HOME,GALLERY, RESERVATION MENU Bar-->
+	<div id="home">
+
+			<ul>				
+				<li><a href="#home">HOME</a></li>
+				<li><a href="#gallery" >GALLERY</a></li>
+				<li><a href="#lightbox">LIGHTBOX</a></li>
+				<li><a href="#contact">RESERVATION</a></li>
+			</ul>
+		</nav>
+	<!-- HOME IMAGE-->
+		<div class="img">
+			<div class="content">
+				<h1>The Mug's Shop</h1>
+			</div>
+		</div>
+	</div>
+	<!--End HOME-->
+	<!--start GALLERY-->
+	<div id="gallery">
+		<section>
+			<h1 style="color: #EC6EA3;">Gallery</h1>
+			<h3>Mug Picture</h3>	
+				<!-- insert mug image-->
+				<div>
+					<div class="picture_list">
+						<a href ="./images/mythumbnail_1.jpg" target="_blank" class="picture">
+						<img src="./images/mythumbnail_1.jpg" alt="Mug cup 1" width="225" ></a>		
+						
+						<a href ="./images/mythumbnail_2.jpg" target="_blank" class="picture">
+						<img src="./images/mythumbnail_2.jpg" alt="Mug cup 2" width="225"></a>		
+			
+						<a href ="./images/mythumbnail_3.jpg" target="_blank" class="picture">
+						<img src="./images/mythumbnail_3.jpg" alt="Mug cup 3"  width="225"></a>			
+					</div>
+					<div class="picture_list">
+						<a href ="./images/mythumbnail_4.jpg" target="_blank" class="picture">
+						<img src="./images/mythumbnail_4.jpg" alt="Mug cup 4" width="225" ></a>			
+						
+						<a href ="./images/mythumbnail_5.jpg" target="_blank" class="picture">
+						<img src="./images/mythumbnail_5.jpg" alt="Mug cup 5" width="225"></a>			
+			
+						<a href ="./images/mythumbnail_6.jpg" target="_blank" class="picture">
+						<img src="./images/mythumbnail_6.jpg" alt="Mug cup 6"  width="225"></a>			
+					</div>
+					<div class="picture_list">
+						<a href ="./images/mythumbnail_7.jpg" target="_blank" class="picture">
+						<img src="./images/mythumbnail_7.jpg" alt="Mug cup 7" width="225" ></a>			
+						
+						<a href ="./images/mythumbnail_8.jpg" target="_blank" class="picture">
+						<img src="./images/mythumbnail_8.jpg" alt="Mug cup 8" width="225"></a>
+						
+						
+						<a href ="./images/mythumbnail_9.jpg" target="_blank" class="picture">
+						<img src="./images/mythumbnail_9.jpg" alt="Mug cup 9"  width="225"></a>	
+						
+					</div>
+					<!--end mug image-->
+					<!--Mug video "to use video tag"-->
+					<div>
+						<h3 style="background-color:yellow; color:purple; font-family:Bradley Hand; width:100px">Mug Video</h3>
+						<a href="https://www.youtube.com/watch?v=rOZqmoljwVE" target="_blank"><p style="color:"><p style="font-family:Bradley Hand; font-size:20px;"><br>click to play video</p></a>
+						<video src ="https://www.youtube.com/watch?v=rOZqmoljwVE" controls width="400">mug video</video>
+					</div>
+				</div>	
+		</section>			
+	</div>
+
+<!-- light box -->
+<div id="lightbox">
+	<h2>Light Box</h2>
+	<div class="row">
     <div class="column">
       <img src="./Images/img1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
     </div>
@@ -23,59 +96,96 @@
       <img src="./Images/img4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
     </div>
   </div>
-  
-  <!-- The Modal/Lightbox -->
-  <div id="myModal" class="modal">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
-    <div class="modal-content">
-  
-      <div class="mySlides">
-        <div class="numbertext">1 / 4</div>
-        <img src="./Images/img1_wide.jpg" style="width:100%">
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">2 / 4</div>
-        <img src="./Images/img2_wide.jpg" style="width:100%">
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">3 / 4</div>
-        <img src="./Images/img3_wide.jpg" style="width:100%">
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">4 / 4</div>
-        <img src="./Images/img4_wide.jpg" style="width:100%">
-      </div>
-  
-      <!-- Next/previous controls -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  
-      <!-- Caption text -->
-      <div class="caption-container">
-        <p id="caption"></p>
-      </div>
-  
-      <!-- Thumbnail image controls -->
-      <div class="column">
-        <img class="demo" src="./Images/img1.jpg" onclick="currentSlide(1)" alt="Sunrise_1">
-      </div>
-  
-      <div class="column">
-        <img class="demo" src="./Images/img2.jpg" onclick="currentSlide(2)" alt="Sunrise_2">
-      </div>
-  
-      <div class="column">
-        <img class="demo" src="./Images/img3.jpg" onclick="currentSlide(3)" alt="Sunrise_3">
-      </div>
-  
-      <div class="column">
-        <img class="demo" src="./Images/img4.jpg" onclick="currentSlide(4)" alt="Sunrise_4">
-      </div>
-     
-    </div>
-  </div>
-</body>
+	  <!-- The Modal/Lightbox -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+		
+				<div class="mySlides">
+					<div class="numbertext">1 / 4</div>
+					<img src="./Images/img1_wide.jpg" style="width:100%">
+				</div>
+		
+				<div class="mySlides">
+					<div class="numbertext">2 / 4</div>
+					<img src="./Images/img2_wide.jpg" style="width:100%">
+				</div>
+		
+				<div class="mySlides">
+					<div class="numbertext">3 / 4</div>
+					<img src="./Images/img3_wide.jpg" style="width:100%">
+				</div>
+		
+				<div class="mySlides">
+					<div class="numbertext">4 / 4</div>
+					<img src="./Images/img4_wide.jpg" style="width:100%">
+				</div>
+		
+				<!-- Next/previous controls -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+				<!-- Caption text -->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+		
+				<!-- Thumbnail image controls -->
+				<div class="column">
+					<img class="demo" src="./Images/img1.jpg" onclick="currentSlide(1)" alt="Sunrise_1">
+				</div>
+		
+				<div class="column">
+					<img class="demo" src="./Images/img2.jpg" onclick="currentSlide(2)" alt="Sunrise_2">
+				</div>
+		
+				<div class="column">
+					<img class="demo" src="./Images/img3.jpg" onclick="currentSlide(3)" alt="Sunrise_3">
+				</div>
+		
+				<div class="column">
+					<img class="demo" src="./Images/img4.jpg" onclick="currentSlide(4)" alt="Sunrise_4">
+				</div>
+			 
+			</div>
+		</div>
+</div>
+<!-- End lightbox -->
+	<!--End GALLERY-->
+	<!--start Reservation--> 
+	<div id ="contact">
+		<section>
+			<div>
+				<h2>Reserve your mug now!</h2>
+				
+				<div class = "reservation" >
+					<form action="" method="post">
+						<input class="rsvp" type="text" value="" placeholder="First Name">
+						<input class="rsvp" type="text" value="" placeholder="Last Name">
+						<input class="rsvp" type="text" value="" placeholder="Email Address">
+						<input class="rsvp" type="text" value="" placeholder="Phone Number">
+						<div class="form-spacer">
+							<label class="terms">Terms and Contditions</label>
+						</div>
+						<div class="submit">
+							<input type="submit" value="Submit">
+						</div>
+					</form>
+			</div>
+			
+		
+		</section>	
+	</div>
+		
+	<!--End Reservation-->			
+	
+	<!--footer tag-->
+		<footer>
+			<div id="footer">
+				<p>503-456-3455
+				<br>2023 Enesco, LLC All Right Reserved</p>
+			</div>	
+		<footer>
+	
+	</body>
 </html>

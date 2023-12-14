@@ -1,12 +1,12 @@
-# JavaScript-Projects
+mm# JavaScript-Projects
 
   There are some small projects I made using Javascript.
 
 ## Projects
 
-..* Pizza Menu (Pizza_Project folder)
-..* Tic-Tac-Toe Game
-..* Calculator
+* Pizza Menu (Pizza_Project folder)
+* Tic-Tac-Toe Game
+* Calculator
 
 ### Pizza Menu
 

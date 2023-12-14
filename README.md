@@ -4,9 +4,9 @@
 
 ## Projects
 
-* Pizza Menu (Pizza_Project folder)
-* Tic-Tac-Toe Game
-* Calculator
+* [Pizza Menu](https://github.com/seonhwakwon/JavaScript-Projects/tree/main/Pizza_Project)
+* [Tic-Tac-Toe Game](https://github.com/seonhwakwon/JavaScript-Projects/tree/main/TicTacToe)
+* [Calculator](https://github.com/seonhwakwon/JavaScript-Projects/tree/main/calculator)
 
 ### Pizza Menu
 

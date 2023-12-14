@@ -1,4 +1,4 @@
-mm# JavaScript-Projects
+# JavaScript-Projects
 
   There are some small projects I made using Javascript.
 

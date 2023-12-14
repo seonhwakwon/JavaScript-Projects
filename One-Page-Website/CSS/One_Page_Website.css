@@ -107,6 +107,13 @@ h3 {
   padding: 0 8px;
 } */
 
+.row{
+  border:1px solid black;
+  height: 250px;
+  background-color:yellow;
+  padding-top:45px;
+  padding-left:53px
+}
 .row:after {
     content: "";
     display: table;
